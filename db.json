@@ -6,9 +6,9 @@
     }
   ],
   "true": {
-    "value": true
+    "value": "true"
   },
     "false": {
-    "value": false
+    "value": "false"
   }
 }
