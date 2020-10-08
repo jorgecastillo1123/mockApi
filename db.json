@@ -1,0 +1,10 @@
+{
+  "qualifyTrue": [
+    {
+      "flag": true
+    }
+  ],
+  "qualifyFalse": {
+    "flag": false
+  }
+}
