@@ -1,9 +1,14 @@
-{
-    "qualifyTrue": {
-        "flag": true
-    },
-    "qualifyFalse": {
-      "flag": false
-    }
-  }
+
+  {
+    "qualifyTrue": [
+      {
+        "flag": false
+      }
+    ],
+    "qualifyFalse": [
+        {
+            "flag": false
+        }
+      ]
+}
   
