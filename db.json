@@ -2,7 +2,8 @@
   "user": [
     {
       "id": 1,
-      "username": "Jorge"
+      "username": "Jorge",
+      "password": "123"
     }
   ],
   "true": {
