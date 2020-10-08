@@ -5,7 +5,10 @@
       "title": "hello"
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "true": {
+    "value": true
+  },
+    "false": {
+    "value": false
   }
 }
