@@ -1,0 +1,61 @@
+[
+    {
+      headerText: 'Hello',
+      summaryText: 'Hello',
+      type: 'Loan',
+      id: 'initial',
+      questions: [
+        {
+          headerText: 'Financing my new home.',
+          summaryText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat.`,
+          required: true,
+          type: 2,
+          validation: '',
+          path: 'credit',
+        },
+        {
+          headerText: 'Refinancing my home.',
+          summaryText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat.`,
+          required: true,
+          type: 2,
+          validation: '',
+          path: 'credit',
+        },
+        {
+          headerText: 'Pulling equity out of my home.',
+          summaryText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat.`,
+          required: true,
+          type: 2,
+          validation: '',
+          path: 'credit',
+        },
+      ],
+    },
+    {
+      headerText: 'Hello Im Panel number 2',
+      summaryText: 'Bye bye',
+      type: 'Credit Score',
+      id: 'credit',
+      questions: [
+        {
+          headerText: 'Financing my new home.',
+          summaryText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat.`,
+          required: true,
+          type: 2,
+          validation: '',
+        },
+      ],
+    },
+  ];
