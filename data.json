@@ -3,14 +3,13 @@
         {
             "headerText": "Tell us what you are interested in today.",
             "summaryText": "Help us understand what you want to do with this loan, this will only take a moment.",
-            "type": "Loan",
+            "type": "SelectButton",
             "id": "initial",
             "questions": [
                 {
                     "headerText": "Refinancing my home.",
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
-                    "type": 2,
                     "validation": "",
                     "path": "credit"
                 },
@@ -18,7 +17,6 @@
                     "headerText": "Refinancing my home.",
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
-                    "type": 2,
                     "validation": "",
                     "path": "credit"
                 },
@@ -26,24 +24,38 @@
                     "headerText": "Pulling equity out of my home.",
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
-                    "type": 2,
                     "validation": "",
-                    "path": "credit"
+                    "path": "ssn"
                 }
             ]
         },
         {
-            "headerText": "Hello Im Panel number 2",
-            "summaryText": "Bye bye",
-            "type": "Credit Score",
+            "headerText": "Great lets get Started",
+            "summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "type": "SelectButton",
             "id": "credit",
             "questions": [
                 {
-                    "headerText": "Financing my new home.",
+                    "headerText": "Do you have a SSN",
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
-                    "type": 2,
-                    "validation": ""
+                    "validation": "",
+                    "path": "ssn"
+                }
+            ]
+        },
+        {
+            "headerText": "Please provide your Social Security Number ",
+            "summaryText": "We need this to complete your application",
+            "type": "Text",
+            "id": "ssn",
+            "questions": [
+                {
+                    "headerText": "Last 4 Digits of your SSN",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "path": "ssn"
                 }
             ]
         }
