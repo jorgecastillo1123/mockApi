@@ -1,8 +1,8 @@
 {
     "panels": [
         {
-            "headerText": "Hello Wilqo",
-            "summaryText": "Hello",
+            "headerText": "Tell us what you are interested in today.",
+            "summaryText": "Help us understand what you want to do with this loan, this will only take a moment.",
             "type": "Loan",
             "id": "initial",
             "questions": [
