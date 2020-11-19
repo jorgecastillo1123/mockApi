@@ -56,6 +56,13 @@
                     "required": true,
                     "validation": "",
                     "path": "ssn"
+                },
+                {
+                    "headerText": "Please provide your Address",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "path": "ssn"
                 }
             ]
         }
