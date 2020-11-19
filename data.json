@@ -45,7 +45,7 @@
             ]
         },
         {
-            "headerText": "Please provide your Social Security Number ",
+            "headerText": "Please provide more Information",
             "summaryText": "We need this to complete your application",
             "type": "Text",
             "id": "ssn",
