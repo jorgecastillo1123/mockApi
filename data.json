@@ -11,20 +11,23 @@
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
                     "validation": "",
-                    "path": "credit"
+                    "path": "credit",
+                    "id": "1",
                 },
                 {
                     "headerText": "Refinancing my home.",
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
                     "validation": "",
-                    "path": "credit"
+                    "path": "credit",
+                    "id": "2"
                 },
                 {
                     "headerText": "Pulling equity out of my home.",
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
                     "validation": "",
+                    "id": "3",
                     "path": "ssn"
                 }
             ]
@@ -40,6 +43,7 @@
                     "summaryText": "Lorem ipsum dolor sit amet,",
                     "required": true,
                     "validation": "",
+                    "id": "1",
                     "path": "ssn"
                 }
             ]
@@ -55,6 +59,7 @@
                     "summaryText": "",
                     "required": true,
                     "validation": "",
+                    "id": "1",
                     "path": "ssn"
                 },
                 {
@@ -62,6 +67,7 @@
                     "summaryText": "",
                     "required": true,
                     "validation": "",
+                    "id": "2",
                     "path": "ssn"
                 }
             ]
