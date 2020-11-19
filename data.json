@@ -3,7 +3,7 @@
         {
             "headerText": "Tell us what you are interested in today.",
             "summaryText": "Help us understand what you want to do with this loan, this will only take a moment.",
-            "type": "SelectButton",
+            "type": "Button",
             "id": "initial",
             "questions": [
                 {
@@ -32,7 +32,7 @@
         {
             "headerText": "Great lets get Started",
             "summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "type": "SelectButton",
+            "type": "Button",
             "id": "credit",
             "questions": [
                 {
