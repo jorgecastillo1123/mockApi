@@ -1,71 +1,451 @@
 {
-	"panels": [{
-			"headerText": "Tell us what you are interested in today.",
-			"summaryText": "Help us understand what you want to do with this loan, this will only take a moment.",
-			"type": "Button",
-			"id": "initial",
-			"questions": [{
-					"headerText": "Refinancing my home.",
-					"summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-					"required": true,
-					"validation": "",
-					"path": "credit",
-					"id": "1"
-				},
-				{
-					"headerText": "Refinancing my home.",
-					"summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-					"required": true,
-					"validation": "",
-					"path": "credit",
-					"id": "2"
-				},
-				{
-					"headerText": "Pulling equity out of my home.",
-					"summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-					"required": true,
-					"validation": "",
-					"id": "3",
-					"path": "ssn"
-				}
-			]
-		},
-		{
-			"headerText": "Great lets get Started",
-			"summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-			"type": "Button",
-			"id": "credit",
-			"questions": [{
-				"headerText": "Do you have a SSN",
-				"summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-				"required": true,
-				"validation": "",
-				"id": "1",
-				"path": "ssn"
-			}]
-		},
-		{
-			"headerText": "Please provide more Information",
-			"summaryText": "We need this to complete your application",
-			"type": "Text",
-			"id": "ssn",
-			"questions": [{
-					"headerText": "Last 4 Digits of your SSN",
-					"summaryText": "",
-					"required": true,
-					"validation": "",
-					"id": "1",
-					"path": "ssn"
-				},
-				{
-					"headerText": "Please provide your Address",
-					"summaryText": "",
-					"required": true,
-					"validation": "",
-					"id": "2",
-					"path": "ssn"
-				}
-			]
-		}
-	]
+    "panels": [
+        {
+            "headerText": "",
+            "summaryText": "",
+            "id": "initial",
+            "showNext": false,
+            "panelElements": [
+                {
+                    "headerText": "Consumer",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "type": "button",
+                    "path": "consumer",
+                    "id": "consumer",
+                    "order": 1
+                },
+                {
+                    "headerText": "Lender",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "type": "button",
+                    "path": "lender",
+                    "id": "lender",
+                    "order": 2
+                },
+                {
+                    "headerText": "Broker",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "path": "broker",
+                    "id": "broker",
+                    "order": 3
+                }
+            ]
+        },
+        {
+            "headerText": "What can we help with?",
+            "summaryText": "",
+            "id": "consumer",
+            "showNext": false,
+            "panelElements": [
+                {
+                    "headerText": "Financing my new home.",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "type": "button",
+                    "path": "buying-process",
+                    "id": "finance-home",
+                    "order": 1
+                },
+                {
+                    "headerText": "Refinancing my home.",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "type": "button",
+                    "path": "buying-process",
+                    "id": "refinance-home",
+                    "order": 2
+                },
+                {
+                    "headerText": "Pulling equity out of my home.",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "button",
+                    "validation": "",
+                    "path": "buying-process",
+                    "id": "equity-home",
+                    "order": 3
+                }
+            ]
+        },
+        {
+            "headerText": "Where are you in the process?",
+            "summaryText": "",
+            "id": "buying-process",
+            "showNext": false,
+            "panelElements": [
+                {
+                    "headerText": "Im just researching",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "researching",
+                    "type": "expansion",
+                    "path": "state-lookup",
+                    "order": 1
+                },
+                {
+                    "headerText": "I’m touring properties",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "touring",
+                    "type": "expansion",
+                    "path": "state-lookup",
+                    "order": 2
+                },
+                {
+                    "headerText": "I’m ready to make an offer",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "ready-for-offer",
+                    "type": "expansion",
+                    "path": "state-lookup",
+                    "order": 3
+                },
+                {
+                    "headerText": "I’ve signed a purchase contract",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "contract",
+                    "type": "expansion",
+                    "path": "state-lookup",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "headerText": "Where are you looking?",
+            "summaryText": "",
+            "id": "state-lookup",
+            "showNext": true,
+            "panelElements": [
+                {
+                    "headerText": "Type a state",
+                    "summaryText": "",
+                    "required": false,
+                    "type": "auto-complete-states",
+                    "validation": "",
+                    "id": "state",
+                    "path": "about-property",
+                    "order": 1
+                }
+            ]
+        },
+        {
+            "headerText": "Tell us about the property you are refinancing.",
+            "summaryText": "",
+            "id": "about-property",
+            "showNext": true,
+            "panelElements": [
+                {
+                    "headerText": "Type Address",
+                    "summaryText": "",
+                    "type": "auto-complete-address",
+                    "required": true,
+                    "validation": "",
+                    "id": "address",
+                    "path": "more-property-info",
+                    "order": 1
+                },
+                {
+                    "headerText": "Unit #",
+                    "summaryText": "",
+                    "required": false,
+                    "validation": "",
+                    "id": "unit",
+                    "path": "more-property-info",
+                    "order": 2
+                }
+            ]
+        },
+        {
+            "headerText": "What type of home are you looking for?",
+            "summaryText": "",
+            "id": "more-property-info",
+            "showNext": true,
+            "panelElements": [
+                {
+                    "headerText": "Single Family",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "single-family",
+                    "type": "expansion",
+                    "path": "more-info-property",
+                    "order": 1
+                },
+                {
+                    "headerText": "Townhouse or Condo",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "townhouse",
+                    "type": "expansion",
+                    "path": "more-info-property",
+                    "order": 2
+                },
+                {
+                    "headerText": "2 to 4 units",
+                    "summaryText": "",
+                    "required": true,
+                    "validation": "",
+                    "id": "more-units",
+                    "type": "expansion",
+                    "path": "more-info-property",
+                    "order": 3
+                }
+            ]
+        },
+        {
+            "headerText": "What is the expected monthly gross rental income?",
+            "summaryText": "",
+            "id": "more-info-property",
+            "showNext": true,
+            "panelElements": [
+                {
+                    "headerText": "Type income",
+                    "summaryText": "",
+                    "required": false,
+                    "type": "text",
+                    "validation": "numeric",
+                    "id": "state",
+                    "path": "more-info-consumer",
+                    "order": 1
+                }
+            ]
+        },
+        {
+            "headerText": "Tell us about yourself",
+            "summaryText": "",
+            "id": "more-info-consumer",
+            "showNext": true,
+            "panelElements": [
+                {
+                    "headerText": "First name",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "first-name",
+                    "path": "more-info-finances",
+                    "order": 1
+                },
+                {
+                    "headerText": "Last name",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "last-name",
+                    "path": "more-info-finances",
+                    "order": 2
+                },
+                {
+                    "headerText": "Current Address",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "current-address",
+                    "path": "more-info-finances",
+                    "order": 2
+                },
+                {
+                    "headerText": "Unit #",
+                    "summaryText": "",
+                    "required": false,
+                    "type": "text",
+                    "validation": "",
+                    "id": "unit-number",
+                    "path": "more-info-finances",
+                    "order": 4
+                },
+                {
+                    "headerText": "My mail is sent to a different address",
+                    "summaryText": "",
+                    "required": false,
+                    "type": "checkbox",
+                    "validation": "",
+                    "id": "different-address",
+                    "path": "more-info-finances",
+                    "order": 5
+                }
+            ]
+        },
+        {
+            "headerText": "Tell us a little more about your finances",
+            "summaryText": "",
+            "id": "more-info-finances-automated",
+            "showNext": true,
+            "panelElements": [
+                { 
+                    "headerText": "This will not affect your credit",
+                    "externalLink": "",
+                    "summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "type": "modal",
+                    "id": "",
+                    "path": "authorize-credit",
+                    "order": 1
+                },
+                {
+                    "headerText": "Last 4 digits of you SSN",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "ssn",
+                    "path": "authorize-credit",
+                    "order": 2
+                },
+                { 
+                    "headerText": "I don’t have a SSN",
+                    "externalLink": "www.somewhere.com",
+                    "summaryText": "",
+                    "type": "link",
+                    "id": "",
+                    "path": "authorize-credit",
+                    "order": 3
+                },
+                {
+                    "headerText": "Birthdate",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "calendar",
+                    "id": "birthday",
+                    "path": "authorize-credit",
+                    "order": 4
+                },
+                {
+                    "headerText": "I authorize to run a soft pull check check.  I also agree to .... Terms and Conditions, Privacy Policy, and Consent to Receive Electronic Loan Documents.",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "checkbox",
+                    "validation": "",
+                    "id": "authorize-credit-check",
+                    "path": "authorize-credit",
+                    "order": 5
+                }
+            ]
+        },
+        {
+            "headerText": "Tell us a little more about your finances",
+            "summaryText": "If you don't know the exact numbers, that's okay - estimates are fine for now.  We'll gather detailed numbers from you later in the process.",
+            "id": "more-info-finances",
+            "showNext": true,
+            "panelElements": [
+                { 
+                    "headerText": "Total monthly income (before taxes and other dedcutions)",
+                    "externalLink": "",
+                    "summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "type": "modal",
+                    "id": "",
+                    "path": "loading",
+                    "order": 1
+                },
+                {
+                    "headerText": "Type monthly income",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "monthly-income",
+                    "path": "loading",
+                    "order": 2
+                },
+                {
+                    "headerText": "Type balance",
+                    "summaryText": "Total balance of all checking and savings accounts",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "savings-balance",
+                    "path": "loading",
+                    "order": 3
+                },
+                {
+                    "headerText": "Type balance",
+                    "summaryText": "Total balance of all retirement accounts",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "retirement-balance",
+                    "path": "loading",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "headerText": "Debts that you have",
+            "summaryText": "",
+            "id": "authorize-credit",
+            "showNext": true,
+            "panelElements": [
+                { 
+                    "headerText": "This will not affect your credit",
+                    "externalLink": "",
+                    "summaryText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "type": "modal",
+                    "id": "",
+                    "path": "loading",
+                    "order": 1
+                },
+                {
+                    "headerText": "Last 4 digits of you SSN",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "text",
+                    "validation": "",
+                    "id": "ssn",
+                    "path": "loading",
+                    "order": 2
+                },
+                { 
+                    "headerText": "I don’t have a SSN",
+                    "externalLink": "www.somewhere.com",
+                    "summaryText": "",
+                    "type": "link",
+                    "id": "",
+                    "path": "loading",
+                    "order": 3
+                },
+                {
+                    "headerText": "I authorize to run a soft pull check check.  I also agree to .... Terms and Conditions, Privacy Policy, and Consent to Receive Electronic Loan Documents.",
+                    "summaryText": "",
+                    "required": true,
+                    "type": "checkbox",
+                    "validation": "",
+                    "id": "authorize-credit-check",
+                    "path": "loading",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "headerText": "",
+            "summaryText": "",
+            "id": "loading",
+            "showNext": false,
+            "panelElements": [
+                { 
+                    "headerText": "Finding the best rates for you",
+                    "summaryText": "We are now checking your information to find the best rates for you...",
+                    "type": "loading",
+                    "id": "loading",
+                    "path": "",
+                    "order": 1
+                }
+            ]
+        }
+    ]
 }
