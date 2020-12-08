@@ -1,7 +1,7 @@
 {
     "panels": [
         {
-            "headerText": "",
+            "headerText": "Select a persona",
             "summaryText": "",
             "id": "initial",
             "showNext": false,
