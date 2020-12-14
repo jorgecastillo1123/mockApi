@@ -88,7 +88,7 @@
             "showNext": false,
             "panelElements": [
                 {
-                    "headerText": "Im just researching",
+                    "headerText": "I’m just researching",
                     "summaryText": "",
                     "required": true,
                     "disabled": false,
