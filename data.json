@@ -186,7 +186,7 @@
             "headerText": "What type of home are you looking for?",
             "summaryText": "",
             "id": "more-property-info",
-            "showNext": true,
+            "showNext": false,
             "panelElements": [
                 {
                     "headerText": "Single Family",
